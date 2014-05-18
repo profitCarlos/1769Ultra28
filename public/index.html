@@ -1,0 +1,26 @@
+<html ng-app="profitRC">
+<head>
+	<title>Profit NC</title>
+
+	 <script src="js/lib/angular.min.js"></script>
+	 <script src="js/lib/jquery-1.11.1.min.js"></script>
+
+	 <script src="js/script.js"></script>
+
+</head>
+<body>
+
+	<div ng-controller="mainController">
+
+		<ul>
+			<li ng-repeat="supplier in suppliers">
+				<h1>{{supplier.prov_des}}</h1>
+				<span>{{supplier.rif}}</span>
+				<span>{{supplier.co_zon}}</span>
+			</li>
+		</ul>
+
+	</div>
+
+</body>
+</html>
